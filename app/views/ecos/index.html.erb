@@ -1,0 +1,101 @@
+<%= stylesheet_link_tag 'index', :media => "all" %>
+<div class="indexback">
+  <div class="kensaku">
+    <h3>投稿を検索</h3>
+    <%= form_tag({controller:"ecos",action:"index"}, method: :get) do %>   
+      <%= search_field_tag :search %>
+
+      <%= submit_tag 'search', class:"btn btn-outline-success"%>
+    <% end %>
+
+    <h3>タグで検索</h3>
+    <%= form_tag({controller:"ecos",action:"index"}, method: :get) do %>
+      <% Tag.all.each do |t| %>
+          <li><%= check_box :tag_ids, t.name %><%= t.name %></li>
+      <% end %>
+      <%= submit_tag 'search', class:"btn btn-outline-success" %>
+    <% end %>
+  </div>
+
+  
+  <div class="main-box">
+    <div class="ecochat">
+    <h3>投稿一覧</h3>
+    <% @ecos.each do |t| %>
+      <div class="ecolist">
+        <p> User: <a href="/users/<%= t.user.id %>"><%= t.user.name %></a></p>
+        <br>
+        <p class="image"><%= image_tag t.image_url, size:"500x300" if t.image? %></p>
+        <br>
+        <p>Title: <%= t.title %></p>
+        
+          
+        
+        
+        <br>
+        
+        
+
+        <% if user_signed_in? %>
+          <% if current_user.already_liked?(t) %>
+            <%= link_to eco_like_path(id: t.id, eco_id: t.id), method: :delete do %>
+              <i class="fas fa-heart"></i><%= t.likes.count %>
+            <% end %>
+          <% else %>
+            <%= link_to eco_likes_path(id: t.id, eco_id: t.id), method: :post do %>
+              <i class="far fa-heart"></i><%= t.likes.count %>
+            <% end %>
+          <% end %>
+        <% else %>
+          <i class="far fa-heart"></i><%= t.likes.count %>
+        <% end %>
+
+        <%= t.created_at %>
+        <%= link_to "詳細へ", eco_path(t.id) %>
+        <% if user_signed_in? && current_user.id == t.user_id %>  
+          <%= link_to "編集する", edit_eco_path(t.id) %>
+          <%= link_to "削除する", eco_path(t.id), method: :delete %>
+        <% end %> 
+      </div>　
+    <% end %>
+    </div>
+
+    <br>
+    
+    <div class="rank-box">
+      <h2>いいねランキング</h2>
+      <% @rank_tweets.each do |t| %>
+        <div class="ranklist">
+          <p>User:<a href="/users/<%= t.user.id %>"><%= t.user.name %></a></p>
+          <p class="image"><%= image_tag t.image_url, size: "250x200" if t.image? %></p>
+          <p>Title: <%= t.title %></p>
+
+          <% if user_signed_in? %>
+            <% if current_user.already_liked?(t) %>
+              <%= link_to eco_like_path(id: t.id, eco_id: t.id), method: :delete do %>
+                <i class="fas fa-heart"></i><%= t.likes.count %>
+              <% end %>
+            <% else %>
+              <%= link_to eco_likes_path(id: t.id, eco_id: t.id), method: :post do %>
+                <i class="far fa-heart"></i><%= t.likes.count %>
+              <% end %>
+            <% end %>
+          <% else %>
+            <i class="far fa-heart"></i><%= t.likes.count %>
+          <% end %>
+
+          
+          <%= link_to "詳細へ", eco_path(t.id) %>
+
+          <% if user_signed_in? && current_user.id == t.user_id %>  
+            <%= link_to "編集する", edit_eco_path(t.id) %>
+            <%= link_to "削除する", eco_path(t.id), method: :delete %>
+          <% end %> 　
+        </div>
+      <% end %>
+    </div>
+  
+
+  </div>
+</div>
+

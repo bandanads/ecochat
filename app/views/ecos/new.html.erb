@@ -1,0 +1,51 @@
+<%= stylesheet_link_tag 'new', :media => "all" %>
+<div class="all">
+  <div class="tu">
+  </div>
+  <%= form_for @eco do |f| %>
+    <div class="post-container">
+      <p class="title">新規投稿フォーム</p>
+        <div class="field1">
+          <p class="label"><%= f.label :image %></P>
+          <%= f.file_field :image, class:"btn btn-outline-success"%>
+        </div>
+
+        <br>
+
+        <div class="field2">
+          <p class="label"><%= f.label :"Title" %></p>
+          <%= f.text_field :title %>
+        </div>
+
+        <br>
+        <div class="textarea">
+          <p class="label"><%= f.label :"詳細内容" %></p>
+          <p><%= f.text_area :body,size: "55x9" %></P>
+        </div>
+
+        <br>
+
+        <div class='form-group'>
+          <p class="label"><%= f.label :"tag list" %></p>
+          <%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name) do |tag| %>
+            <div class='form-check'>
+              <%= tag.label class: 'form-check-label' do %>
+                <%= tag.check_box class: "form-check-input" %>
+                <%= tag.text %>
+              <% end %>
+            </div>
+          <% end %>
+        </div>
+
+        <br>
+        <%= f.submit "投稿する", class:"btn btn-primary" %>
+    </div>
+    
+  <% end %>
+
+
+
+  <%= link_to "投稿一覧へ", ecos_path, class:"btn btn-primary"  %>
+  
+</div>
+

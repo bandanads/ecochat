@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.back{
+    background-color: rgb(243, 243, 247);
+    background-size: 100%;
+}
+ 
+.slide{ 
+    position: relative;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+   
+}
+
+@keyframes slideshow {
+    0%{
+      opacity: 0;
+    }
+    10%{
+      opacity: 1;
+    }
+    28%{
+      opacity: 1
+    }
+    38%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 0;
+    }
+}
+.slide img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    animation :slideshow 24s linear infinite;
+  }
+   
+  .slide img:nth-child(2){
+    animation-delay: 8s;
+  }
+   
+  .slide img:nth-child(3){
+    animation-delay: 16s;
+  }
+
+.first-title{
+    position: absolute;
+    margin-left: 200px;
+    height: 100%;
+    padding-top: 150px;
+    
+}
+.ec{
+    font-size: 70px;
+    font-weight: 800;
+    max-width: 100%;
+    letter-spacing: -1.93px;
+    margin-top: 0;
+}
+.ec2{
+    font-size: 38px;
+    font-weight: 300;
+    letter-spacing: 0;
+
+}
+.ploblem{
+    height: 550px;
+    margin: 0px 0px 30px;
+    padding: 30px;
+    background-color: white;
+    background-image: image-url("roya-ann-miller-BkTsP32Dfnc-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+
+.ploblems{
+    margin-top:20px;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.flex-container{
+    height: 180px;
+    font-size: 20px;
+    margin: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.card-img-top{
+    height: 80%;
+    width: 95%;
+    margin: 2px;
+    text-align: center;
+    
+}
+
+#second{
+    height: 500px;
+    padding: 20px;
+    margin: 0px 80px;
+    background-color: white;
+
+  
+}
+
+
+.title-second{
+    font-size: 45px;
+    padding: 20px;
+}
+
+
+
+.flex-tikyuu{
+   
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tikyuu{
+    width: 50%;
+
+}
+
+#third{
+    height: 500px;
+    margin: 0px 80px;
+    background-image: image-url("sea.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.kaiyou{
+    margin-top: 20px;
+    margin-left: 40px;
+    padding: 20px;
+    height: 500;
+    width: 50%;
+    font-size: 17px;
+    background-color: honeydew;
+   
+   
+}  
+
+#fours{
+    height: 500px;
+    margin: 0px 80px;
+    padding: 20px;
+    background-color: white;
+}
+
+.flex-suisitu{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.suisitu{
+    width: 50%;
+}
+
+#fifth{
+    height: 500px;
+    margin: 0px 80px;
+    background-image: image-url("taiki1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.taiki{
+    margin-top: 20px;
+    margin-left: 40px;
+    padding: 20px;
+    height: 500;
+    width: 50%;
+    font-size: 17px;
+    background-color: white;
+    
+   
+}
+
+#sixs{
+    height: 500px;
+    margin: 0px 80px;
+    padding: 20px;
+    background-color: white;
+}
+
+.flex-sinrin{
+    margin-bottom: 20px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sinrin{
+    width: 50%;
+}
+
+.pain{
+    height: 30px;
+    width:30px;
+}

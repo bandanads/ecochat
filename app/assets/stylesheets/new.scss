@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.all{
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, rgba(255,255,255,0) 40%,rgba(255,255,255,0.5) 60%,rgba(255,255,255,1) 100%),url(tree.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+ 
+}
+.post-container {
+  margin:auto;
+  border-top: 10px;
+  width: 50%;
+  border: solid #d3def1;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f3ffe7;
+}
+.title {
+  font-size: 32px;
+  font-weight: bold;
+ margin: 20px;
+}
+.label{
+  padding-top: 25px;
+  font-size: 27px;
+  background-color: white;
+  
+
+}
+input[type="text"] {
+  width: 75%;
+  height: 40px;
+}
+input[type="textarea"] {
+  width: 75%;
+  height: 300px;
+}
+
+input[type="submit"] {
+  width: 200px;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
