@@ -1,12 +1,18 @@
 * {
     padding: 0;
     margin: 0;
-  }
+}
+
+.indexback{
+    background: radial-gradient(rgb(37, 214, 75), rgb(91, 207, 91),rgb(233, 247, 228),rgb(241, 245, 239));
+    
+    
+}
 
 .kensaku{
     display: flex;
     justify-content: space-around;
-    margin: 0px;
+    margin-top: 5px;
 }
 .ecochat{
     width: 600px;
@@ -15,6 +21,7 @@
     border: solid #7e6807;
     margin-top: 10px;
     padding-top: 20px;
+    background: rgb(243, 247, 242);
 }
 .image{
     text-align: center;
@@ -33,6 +40,7 @@
     border: solid #7e6807;
     margin-top: 10px;
     padding-top: 20px;
+    background: rgb(243, 247, 242);
 }
 .ranklist{ 
     border: solid #7e6807;
