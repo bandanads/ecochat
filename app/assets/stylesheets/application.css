@@ -55,8 +55,9 @@
     background-color: #f1f8e8;
     height: 30px;
     width: 100%;
-    font-weight: bold;   
-    position: relative; 
+    font-weight: bold;    
     bottom: 0;
+    position: fixed;
+    justify-content: flex-end;
   }
  

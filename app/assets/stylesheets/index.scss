@@ -5,14 +5,14 @@
 
 .indexback{
     background: radial-gradient(rgb(37, 214, 75), rgb(91, 207, 91),rgb(233, 247, 228),rgb(241, 245, 239));
-    
+    min-height: 100vh;
     
 }
 
 .kensaku{
     display: flex;
     justify-content: space-around;
-    margin-top: 5px;
+    padding-top: 10px;
 }
 .ecochat{
     width: 600px;
