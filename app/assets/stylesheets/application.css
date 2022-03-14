@@ -22,22 +22,22 @@
       Meiryo, "ＭＳ Ｐゴシック", sans-serif;
   }
   header {
-    background-color: #f1f8e8;
-    height: 80px;
+    background-color: #08080800;
+    height: 100px;
     width: 100%;
     padding: 10px;
-    margin-top: -25px;
+    margin-top: -15px;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   header a {
-    color: rgb(12, 11, 11); 
+    color: rgb(143, 235, 147); 
     text-decoration: none; 
   }
   header h1 {
-    color: rgb(3, 3, 3);
+    color: rgb(89, 180, 101);
     margin-left: 20px;
   }
   .header-list {
