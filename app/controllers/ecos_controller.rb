@@ -1,11 +1,11 @@
 class EcosController < ApplicationController
-    before_action :authenticate_user!
+  before_action :authenticate_user!, except: [:top]
   def top
     @eco = Eco.new
 
   end
  
-
+  before_action :authenticate_user!
   def index
    
     @ecos= Eco.all.order(created_at: :desc)
