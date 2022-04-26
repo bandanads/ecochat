@@ -47,3 +47,49 @@
     margin: 10px;
     padding: 20px;
 }
+@media screen and ( max-width:479px ){
+    .indexback{
+        background: radial-gradient(rgb(37, 214, 75), rgb(91, 207, 91),rgb(233, 247, 228),rgb(241, 245, 239));
+        min-height: auto;
+        
+    }
+
+    .kensaku{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 1px;
+    }
+    .ecochat{
+        width: auto;
+        margin: 5 ;
+        margin-left: 5px;
+        border: solid #7e6807;
+        margin-top: 3px;
+        padding-top: 2px;
+        background: rgb(243, 247, 242);
+    }
+    .image{
+        text-align: center;
+    }
+    .ecolist{
+        border: solid #7e6807;
+        margin: 2px;
+        padding: 2px;
+    }
+    .rank-box{
+        position: absolute;  
+        right: auto; 
+        top: auto;
+        width: auto;
+        margin: auto;
+        border: solid #7e6807;
+        margin-top: auto;
+        padding-top: auto;
+        background: rgb(243, 247, 242);
+    }
+    .ranklist{ 
+        border: solid #7e6807;
+        margin: auto;
+        padding: auto;
+    }
+}
