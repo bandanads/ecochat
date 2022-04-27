@@ -1,5 +1,5 @@
 class EcosController < ApplicationController
-  before_action :authenticate_user!, except: [:top]
+  before_action :authenticate_user!, except: :top
   def top
     @eco = Eco.new
 
