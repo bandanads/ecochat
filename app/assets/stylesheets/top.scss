@@ -15,7 +15,471 @@
     overflow: hidden;
    
 }
+@media (min-width: 768px) and (max-width:1024px){
+    
+    .slide{ 
+        margin: 0px;
+        position: relative;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+       
+    }  
+    div.first-title{
+        position: absolute;
+        margin-left: 60px;
+        height: 100%;
+        padding-top: 80px;
+        
+    }
+    h1.ec{
+        font-size: 70px;
+        font-weight: 200;
+        max-width: 100%;
+        letter-spacing: -1.93px;
+        margin-top: 0;
+    }
+    .ec2{
+        font-size: 38px;
+        font-weight: 300;
+        letter-spacing: 0;
+    
+    }
+    section#second{
+        height: 500px;
+        padding: 10px;
+        margin: 0px 5px;
+        background-color: white;
+    
+      
+    }
+    
+    
+    .title-second{
+        font-size: 45px;
+        padding: 20px;
+    }
+    
+    
+    
+    div.flex-tikyuu{
+       
+        font-size: 15px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .tikyuu{
+        width: 50%;
+    
+    }
+    img.osen{
+        width: 300px;
+        height: 100%;
+    }
+    section#third{
+        height: 550px;
+        margin: 0px 5px;
+        background-image: image-url("sea.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    
+    p.kaiyou{
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 10px;
+        height: 400px;
+        width: 90%;
+        font-size: 18px;
+        background-color: honeydew;
+       
+       
+    }  
+    section#fours{
+        height: 500px;
+        margin: 0px 5px;
+        padding: 20px;
+        background-color: white;
+    }
+    
+    div.flex-suisitu{
+        font-size: 14px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .suisitu{
+        width: 50%;
+    }
 
+    img.kitana{
+        width: 95%;
+        height: 300px;
+    }
+    section#fifth{
+        height: 600px;
+        margin: 0px 5px;
+        background-image: image-url("taiki1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    
+    p.taiki{
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 20px;
+        width: 80%;
+        height: 90;
+        font-size: 16px;
+        background-size: center;
+        background-color: white;
+        
+       
+    }
+    section#sixs{
+        height: 500px;
+        margin: 0px 5px;
+        padding: 20px;
+        background-color: white;
+    }
+    
+    div.flex-sinrin{
+        margin-bottom: 20px;
+        font-size: 17px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .sinrin{
+        width: 50%;
+    }
+    
+    .pain{
+        height: 30px;
+        width:30px;
+    }
+
+
+    img.hakai{
+        height: 200px;
+        width: 100%;
+    }
+}
+@media (max-width: 768px){
+    
+    .slide{ 
+        margin: 0px;
+        position: relative;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+       
+    }  
+    div.first-title{
+        position: absolute;
+        margin-left: 60px;
+        height: 100%;
+        padding-top: 80px;
+        
+    }
+    h1.ec{
+        font-size: 70px;
+        font-weight: 200;
+        max-width: 100%;
+        letter-spacing: -1.93px;
+        margin-top: 0;
+    }
+    .ec2{
+        font-size: 38px;
+        font-weight: 300;
+        letter-spacing: 0;
+    
+    }
+    section#second{
+        height: 500px;
+        padding: 10px;
+        margin: 0px 5px;
+        background-color: white;
+    
+      
+    }
+    
+    
+    .title-second{
+        font-size: 45px;
+        padding: 20px;
+    }
+    
+    
+    
+    div.flex-tikyuu{
+       
+        font-size: 15px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .tikyuu{
+        width: 50%;
+    
+    }
+    img.osen{
+        width: 200px;
+        height: 80%;
+    }
+    section#third{
+        height: 550px;
+        margin: 0px 5px;
+        background-image: image-url("sea.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    
+    p.kaiyou{
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 10px;
+        height: 95%;
+        width: 90%;
+        font-size: 14px;
+        background-color: honeydew;
+       
+       
+    }  
+    section#fours{
+        height: 500px;
+        margin: 0px 5px;
+        padding: 20px;
+        background-color: white;
+    }
+    
+    div.flex-suisitu{
+        font-size: 12px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .suisitu{
+        width: 50%;
+    }
+
+    img.kitana{
+        width: 200px;
+        height: 300px;
+    }
+    section#fifth{
+        height: 600px;
+        margin: 0px 5px;
+        background-image: image-url("taiki1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    
+    p.taiki{
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 20px;
+        width: 80%;
+        height: 90;
+        font-size: 16px;
+        background-size: center;
+        background-color: white;
+        
+       
+    }
+    section#sixs{
+        height: 500px;
+        margin: 0px 5px;
+        padding: 20px;
+        background-color: white;
+    }
+    
+    div.flex-sinrin{
+        margin-bottom: 20px;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .sinrin{
+        width: 50%;
+    }
+    
+    .pain{
+        height: 30px;
+        width:30px;
+    }
+
+
+    img.hakai{
+        height: 200px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px){
+    
+    .slide{ 
+        position: relative;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+       
+    }  
+    div.first-title{
+        position: absolute;
+        margin-left: 10px;
+        height: 100%;
+        padding-top: 30px;
+        
+    }
+    h1.ec{
+        font-size: 45px;
+        font-weight: 200;
+        max-width: 100%;
+        letter-spacing: -1.93px;
+        margin-top: 0;
+    }
+    .ec2{
+        font-size: 30px;
+        font-weight: 300;
+        letter-spacing: 0;
+    
+    }
+    section#second{
+        height: 500px;
+        margin: 1px 10px;
+        padding: 10px;
+        background-color: white;
+    
+      
+    }
+    
+    
+    .title-second{
+        font-size: 45px;
+        padding: 10px;
+    }
+    
+    
+    
+    div.flex-tikyuu{
+        height: 100%;
+        font-size: 11px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    p.tikyuu{
+        width: 50%;
+        height: 200px;
+    
+    }
+    img.osen{
+        width: 270px;
+        height: 250px;
+    }
+    section#third{
+        height: 550px;
+        margin: 0px 10px;
+        background-image: image-url("sea.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    
+    p.kaiyou{
+        padding: 20px;
+        height: 80%;
+        width: 80%;
+        font-size: 11px;
+        background-color: honeydew;
+       
+       
+    }  
+    section#fours{
+        height: 500px;
+        margin: 0px 10px;
+        padding: 20px;
+        background-color: white;
+    }
+    
+    div.flex-suisitu{
+        font-size: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .suisitu{
+        width: 40%;
+    }
+
+    img.kitana{
+        width: 100px;
+        height: 170px;
+    }
+    section#fifth{
+        height: 600px;
+        margin: 0px 10px;
+        background-image: image-url("taiki1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    
+    p.taiki{
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 20px;
+        width: 80%;
+        height: 300px;
+        font-size: 12px;
+        background-size: cover;
+        background-color: white;
+        
+       
+    }
+    
+
+    section#sixs{
+        height: 600px;
+        margin: 0px 10px;
+        padding: 10px;
+        background-color: white;
+    }
+    
+    div.flex-sinrin{
+        font-size: 12px;
+        width: 90%;
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    
+    .sinrin{
+        width: 100%;
+    }
+    h2.title-second{
+        width: auto;
+        height: 60px;
+        font-size: 35px;
+        font-weight: bold;
+
+    }
+    .pain{
+        height: 30px;
+        width:30px;
+    }
+    img.hakai{
+        height: 200px;
+        width: 100%;
+    }
+}
 @keyframes slideshow {
     0%{
       opacity: 0;
@@ -139,7 +603,10 @@
     width: 50%;
 
 }
-
+.osen{
+    width: 400px;
+    
+}
 #third{
     height: 500px;
     margin: 0px 80px;
@@ -178,6 +645,10 @@
     width: 50%;
 }
 
+.kitana{
+    width: 500px;
+    
+}
 #fifth{
     height: 500px;
     margin: 0px 80px;
@@ -220,4 +691,8 @@
 .pain{
     height: 30px;
     width:30px;
+}
+.hakai{
+    height: 300px;
+    width: 100%;
 }

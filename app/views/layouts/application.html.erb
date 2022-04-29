@@ -14,29 +14,24 @@
 
 
   <body>
-   <header>
-   
-   <h1>Ecochat</h1>
-   <%= link_to "ログイン", root_path %>
-   <%= link_to "新規登録", new_user_registration_path %>
-   <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+    <header>
+      <h1>Ecochat</h1>
+      <%= link_to "ログイン", root_path, class:"dedede" %>
+      <%= link_to "新規登録", new_user_registration_path %>
+      <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
 
-    <% if user_signed_in? %>
-     <%= link_to "マイページ", user_path(current_user.id) %>
-    <% end %>
+        <% if user_signed_in? %>
+        <%= link_to "マイページ", user_path(current_user.id) %>
+        <% end %>
 
-   
-   <%= link_to "投稿一覧", ecos_path %>
-  
+      
+      <%= link_to "投稿一覧", ecos_path %>
+      
 
-   <%= link_to "新規投稿", new_eco_path %>
-   <%= link_to "Toppage", root_path %>
-  
-   
-
-   
-   
-  </header>
+      <%= link_to "新規投稿", new_eco_path%>
+      <%= link_to "Toppage", root_path %>
+    </header>
+    
     <main>
      <%= yield %>
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
