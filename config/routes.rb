@@ -15,7 +15,7 @@ Rails.application.routes.draw do
     resources :comments, only: [:create]
   end
   
-  root 'ecos#top'
+  root 'hello#index'
   
 
 end
