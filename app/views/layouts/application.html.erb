@@ -15,21 +15,51 @@
 
   <body>
     <header>
-      <h1>Ecochat</h1>
-      <%= link_to "ログイン", root_path, class:"dedede" %>
-      <%= link_to "新規登録", new_user_registration_path %>
-      <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+    <div class="demobox-header">
+	    <span class="demobox-sitename">Ecochat</span>
+      <div class="hamburger-demo-menubox">
+        <input id="hamburger-demo1" type="checkbox" class="input-hidden">
+        <label for="hamburger-demo1" class="hamburger-demo-switch hamburger-demo-switch1">
+          <span class="hamburger-switch-line1"></span>
+        </label>
+          <div class="hamburger-demo-menuwrap">
+            <ul class="hamburger-demo-menulist">
+              <li><%= link_to "ログイン", root_path, class:"dedede" %></li>
+              <li><%= link_to "新規登録", new_user_registration_path %></li>
+              <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+
+              <% if user_signed_in? %>
+              <li><%= link_to "マイページ", user_path(current_user.id) %></li>
+              <% end %>
+
+            
+              <li><%= link_to "投稿一覧", ecos_path %></li>
+            
+
+              <li><%= link_to "新規投稿", new_eco_path%></li>
+              <li><%= link_to "Toppage", root_path %></li>
+            </ul>
+          </div>
+          <div class="hamburger-demo-cover"></div>
+      </div>
+      <div class="menu">  
+        <%= link_to "ログイン", root_path, class:"dedede" %>
+        <%= link_to "新規登録", new_user_registration_path %>
+        <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
 
         <% if user_signed_in? %>
         <%= link_to "マイページ", user_path(current_user.id) %>
         <% end %>
 
       
-      <%= link_to "投稿一覧", ecos_path %>
+        <%= link_to "投稿一覧", ecos_path %>
       
 
-      <%= link_to "新規投稿", new_eco_path%>
-      <%= link_to "Toppage", root_path %>
+        <%= link_to "新規投稿", new_eco_path%>
+        <%= link_to "Toppage", root_path %>
+      </div>
+          
+    </div>
     </header>
     
     <main>
